@@ -30,16 +30,15 @@
 // Take a Number - Battle of the Bands Challenge
 
 let bandNumber = 0;
-const bandNameArray = ["Red Hot Chili Peppers", "Nirvana", "The Beatles", "Fleet Foxes", "Rolling Stones", "Rage Against the Machine", "Beirut", "Slightly Stoopid", "alt-J", "Empire of the Sun"];
 
 const bandID = name => {
-    for (i = 0; i < bandNameArray.length; i++) {
-        bandNumber = bandNumber + 1;
-        console.log(`${bandNumber}. ${name[i]}`);
-    }
+    bandNumber++
+    console.log(`${bandNumber}. ${name}`);
 }
-
-bandID(bandNameArray);
+bandID("Fleet Foxes");
+bandID("RHCP");
+bandID("Nirvana");
+bandID("Rolling Stones");
 
 // Overly Excited Challenge
 
